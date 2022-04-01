@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-blue-700">
+    <div class="text-center text-white text-4xl">
+        <div class="mt-10 mb-20">
+            <h1>PILIH JENIS TRANSAKSI </h1>
+        </div>
+        <div class="flex justify-center space-x-72 ">
+            <ul class="space-y-20">
+                <li><button onclick="penarikan()"><-PENARIKAN</button></li>
+                <li><button><-TRANSFER</button></li>
+                <li><button ><-PEMBELIAN</button></li>
+                <li><button><-LAINNYA</button></li>
+            </ul>
+            <ul class="space-y-20">
+                <li><button>INFO REKENING-></button></li>
+                <li><button >PEMBAYARAN-></button></li>
+                <li><button >UBAH PIN-></button></li>
+                <li><button onclick="lainnya()">KELUAR-></button></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+<script>
+function lainnya(){
+        window.open("ambil.html")
+        window.close("lainnya.html")
+    }
+
+function penarikan(){
+window.open("paket.html")
+window.close("lainnya.html")
+}
+
+</script>
+
+</html>

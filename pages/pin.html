@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-blue-700">
+    <div class="flex justify-center items-center text-white font-bold mt-10">
+        <div>
+            <img src="/img/pin.png" alt="">
+        </div>
+        <div class="text-4xl text-center space-y-16 ">
+            <h1>MASUKAN PIN</h1>
+            <form action="" onsubmit="pin()">
+                <input type="password" required placeholder="masukan pin" class="text-black" id="angka">
+                <input type="submit" value="ENTER" class="text-black">
+            </form>
+            <h1>TEKAN 'ENTER' JIKA SELESAI <br>MASUKAN PIN</h1>
+        </div>
+    </div>
+</body>
+<script>
+
+    function pin(){
+        let pin = document.getElementById("angka").value
+        if (pin == "123456"){
+            window.open("paket.html")
+            window.close("pin.html")
+        }else{
+            alert("sandi anda salah")
+        }
+    }
+</script>
+</html>

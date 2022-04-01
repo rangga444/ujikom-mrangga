@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-blue-700">
+    <div class="text-center text-white text-4xl">
+        <div class="mt-10 mb-20">
+            <h1>PILIH JUMLAH TUNAI</h1>
+        </div>
+        <div class="flex justify-center space-x-72 ">
+            <ul class="space-y-20">
+                <li><button onclick="seratus()"><-100000</button></li>
+                <li><button onclick="duaratus()"><-200000</button></li>
+                <li><button onclick="tigaratus()"><-300000</button></li>
+                <li><button onclick="limaratus()"><-500000</button></li>
+            </ul>
+            <ul class="space-y-20">
+                <li><button onclick="sejuta()">1000000-></button></li>
+                <li><button onclick="setengah()">1500000-></button></li>
+                <li><button onclick="duajuta()">2000000-></button></li>
+                <li><button onclick="lainnya()">TRANSAKSI <br>LAINNYA-></button></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+<script>
+
+    let saldo = 5000000
+    let paket ={
+        seRatus:100000,
+        duaRatus:200000,
+        tigaRatus:300000,
+        limaRatus:500000,
+        seJuta:1000000,
+        seTengah:1500000,
+        duaJuta:2000000,
+    }
+
+    function seratus(){
+        let saldoakhir = saldo-paket.seRatus
+        confirm(`saldo anda tersisa ${saldoakhir}`)
+        window.open("ambil.html")
+        window.close("paket.html")
+    }
+    function duaratus(){
+        let saldoakhir = saldo-paket.duaRatus
+        confirm(`saldo anda tersisa ${saldoakhir}`)
+        window.open("ambil.html")
+        window.close("paket.html")
+    }
+    function tigaratus(){
+        let saldoakhir = saldo-paket.tigaRatus
+        confirm(`saldo anda tersisa ${saldoakhir}`)
+        window.open("ambil.html")
+        window.close("paket.html")
+    }
+    function limaratus(){
+        let saldoakhir = saldo-paket.limaRatus
+        confirm(`saldo anda tersisa ${saldoakhir}`)
+        window.open("ambil.html")
+        window.close("paket.html")
+    }
+    function sejuta(){
+        let saldoakhir = saldo-paket.seJuta
+        confirm(`saldo anda tersisa ${saldoakhir}`)
+        window.open("ambil.html")
+        window.close("paket.html")
+    }
+    function setengah(){
+        let saldoakhir = saldo-paket.seTengah
+        confirm(`saldo anda tersisa ${saldoakhir}`)
+        window.open("ambil.html")
+        window.close("paket.html")
+    }
+    function duajuta(){
+        let saldoakhir = saldo-paket.duaJuta
+        confirm(`saldo anda tersisa ${saldoakhir}`)
+        window.open("ambil.html")
+        window.close("paket.html")
+    }
+    function lainnya(){
+        window.open("lainnya.html")
+        window.close("paket.html")
+    }
+
+</script>
+</html>
